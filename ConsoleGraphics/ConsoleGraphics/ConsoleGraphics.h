@@ -17,17 +17,19 @@ class ConsoleGraphics {
 	// Lines
 	// -----
 	void DrawLine(COORD, COORD);
-	void DrawAngleLine(COORD, int, int);
-	void DrawAngleLine(COORD, int, int, COLORREF);
-	void DrawAngleLine(COORD, COORD, int);
+	void DrawAngleLine(COORD startPoint, int angleDeg, int length);
+	void DrawAngleLine(COORD startPoint, int angleDeg, int length, COLORREF color);
+	void DrawAngleLine(COORD startPoint, int angleDeg, int length, int startCutLength);
 
 
 	// Circles
 	// -------
-	void DrawCircle(COORD, int);
-	void DrawCircle(COORD, int, COLORREF);
-	void SegmentCircle(COORD, int, int);
-	COORD CicleCoordinate(COORD, int, double);
+	void DrawCircle(COORD centre, int radius);
+	void DrawCircle(COORD centre, int radius, COLORREF lineColor);
+	void SegmentCircle(COORD centre, int radius, int segments);
+	void SegmentCircle(COORD centre, int radius, int segments, int startCutLength);
+	void SegmentCircle(COORD centre, int radius, int segments, int startCutLength, int offsetDeg);
+	COORD CicleCoordinate(COORD centre, int radius, double angleDeg);
 
 
 	private:

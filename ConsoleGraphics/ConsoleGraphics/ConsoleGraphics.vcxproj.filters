@@ -21,9 +21,15 @@
     <ClCompile Include="ConsoleGraphics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DartBoard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConsoleGraphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DartBoard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
